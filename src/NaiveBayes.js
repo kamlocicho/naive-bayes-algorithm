@@ -44,7 +44,6 @@ class NaiveBayes {
         let bestClass = null;
         let bestScore = -Infinity;
 
-
         Object.keys(this.classes).forEach((classLabel) => {
             const classProbability = this.classProbabilities[classLabel];
             const classCount = this.classes[classLabel];
