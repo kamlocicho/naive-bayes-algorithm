@@ -1,0 +1,38 @@
+
+
+ucz przy uzyciu danych i klasyfikacja {
+    zmienna ilosc prób 
+    klasa od uczenia nowych słow
+
+    dla kazdej klasyfikacji (0 albo 1)
+        filtruj słowa i ich ilosc
+        oblicznaie prawdopodobienstwa wystapienia slowa
+        przypisywanie do klasyfikacji ilosc jego wystpowania
+        przypisywanie do klasyfikacji prawdopodobienstwa jego wystapienia
+
+
+    dla kazdego slowa z recenzji
+        przypisz slowo do klasyfikacji 0 lub 1
+        
+
+        dla kazdego slowa z recenzji
+            dodaj slowo do slownika
+            jesli nie ma takiego slowa w slowniku, dodaj slowo do slownika i ustal jego ilosc na 0
+
+        dodaj +1 do ilosci tego slowa
+        
+}
+
+predytktuj recenzje
+    ustal klase zwycieska na null
+    ustal njawyzszy wynik na -nieskonczonosc
+    ustal wynik jako 
+
+    dla kazdej klasyfikacji slowa w recenzji
+        dla kazdego slowa, stwierdz jego klasyfikacje i dodaj do ich ilosci
+        oblicz prawdopodobienstwo ze dane slowo jest klasyfikowane jako pozytywne albo negtywne
+        dodaj do wyniku logarytm z tego prawdopodobienstwa
+
+
+    wyswietl ta klasyfikacje ktorej prawdopodobienstwo sumaryczne jest wiecej
+
