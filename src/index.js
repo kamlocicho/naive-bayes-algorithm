@@ -8,7 +8,6 @@ const path = require('path')
 const app = express()
 
 app.use(express.json())
-console.log(__dirname)
 app.use(express.static(path.join(__dirname, 'client')))
 app.use(cors())
 
